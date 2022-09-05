@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<body class="pag02">
+    <div class="item navigation">
+
+        <div class="d-grid gap-4 d-md-flex justify-content-md-evenly">
+            <a href='index.html'>
+                <button class="btn btn-secondary" type="button">Voltar</button> </a>
+        </div>
+    </div>
+
+        <br> 
+        <br>
+
+
+        <div class="item main">
+
+            <!-- Formulário para envio de mensagem. Ele valida se os campos
+                 foram preenchidos e envia alerta caso tenha algum erro -->
+
+            <form name="RegForm" onsubmit="return validaForm()">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-vector-pen" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z" />
+                            <path fill-rule="evenodd"
+                                d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z" />
+                        </svg>
+                    </span>
+                    <input type="assunto" class="form-control" id="exampleFormControlInput1" placeholder="Assunto"
+                        name="Assunto">
+                </div>
+
+                <div class="d-grid gap-4 d-md-flex justify-content-md-evenly">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            @
+                        </span>
+
+                        <input id="email" type="emailEndereco" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nome@exemplo.com" name="Email">
+                        <p id="demo"></p>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                            </svg>
+                        </span>
+                        <input type="telefone" class="form-control" id="exampleFormControlInput1"
+                            placeholder="(00)00 00000-0000" name="Telefone">
+                    </div>
+                </div>
+
+                <div class="d-grid gap-4 d-md-flex justify-content-evenly">
+
+                    <div class="input-group">
+                        <span class="input-group-text">Corpo da Mensagem</span>
+                        <textarea class="form-control" aria-label="With textarea" name="Texto"
+                            placeholder="Sua mensagem"></textarea>
+
+                    </div>
+                </div>
+                <div id="botoesform" class="d-grid gap-4 d-md-flex justify-content-evenly">
+
+                    <input type="submit" class="btn btn-primary" value="Enviar" name="Submit" />
+                    <input type="reset" class="btn btn-primary" value="Limpar Campos" name="Reset" />
+                </div>
+
+            </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous">
+
+
+
+        </script>
+
+    </body>
+
+
+
+</html>
